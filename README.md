@@ -1,37 +1,72 @@
-<br />
-<p align="center">
-  <h3 align="center">@rjsf/tailwind</h3>
+# RJSF Tailwind
 
-  <p align="center">
-  Tailwind theme, fields and widgets for <a href="https://github.com/mozilla-services/react-jsonschema-form/"><code>react-jsonschema-form</code></a>.
-    <br />
-    <a href="https://rjsf-team.github.io/react-jsonschema-form/docs/"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-   <a href="https://rjsf-tailwind.vercel.app/">View @rjsf/tailwind Playground</a>
-    ·
-   <a href="https://rjsf-team.github.io/react-jsonschema-form/">View @rjsf Playground</a>
-  </p>
-</p>
+React JSON Schema Form components with Tailwind CSS styling.
+
+## Installation
+
+```bash
+npm install rjsf-tailwind
+# or
+yarn add rjsf-tailwind
+# or
+pnpm add rjsf-tailwind
+```
 
 ## Usage
 
-### To install
+```tsx
+import { Form, Theme } from 'rjsf-tailwind'
 
-```bash
-yarn
+const schema = {
+  type: "object",
+  properties: {
+    name: {
+      type: "string",
+      title: "Name"
+    },
+    email: {
+      type: "string",
+      title: "Email",
+      format: "email"
+    }
+  }
+}
+
+function MyForm() {
+  return (
+    <Form
+      schema={schema}
+      theme={Theme}
+      onSubmit={(data) => console.log(data)}
+    />
+  )
+}
 ```
 
-### Run in development mode
+## Components
 
-```bash
-yarn dev
-```
+### RJSF Components
+- `Form` - Main form component
+- `Theme` - Tailwind CSS theme configuration
+- `Templates` - Custom templates
+- `Widgets` - Custom widgets
+- Various field templates and widgets
 
-## Features
+### UI Components
+- `Button` - Styled button component
+- `DropdownMenu` - Dropdown menu component
 
-- React + Typescript + Vite
+### Utility Components
+- `Icons` - Icon components
+- `JsonEditor` - JSON editor component
+- `ThemeProvider` - Theme provider component
+
+## Requirements
+
+- React 18+
 - Tailwind CSS
-- Dark mode
-- Tailwind CSS class sorting, merging and linting.
-- 100% customizable
+- @rjsf/core
+
+## License
+
+MIT
