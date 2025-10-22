@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "enableGlobDot": true,
+  "useGitignore": true,
+  "allowCompoundWords": true,
+  "files": [
+    "**/*.{ts,tsx,js,jsx,json,md,css,scss,html}"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "dist-lib",
+    "build",
+    "coverage",
+    "*.lock",
+    "pnpm-lock.yaml",
+    "yarn.lock",
+    "package-lock.json"
+  ],
+  "dictionaries": [
+    "softwareTerms",
+    "node",
+    "npm"
+  ],
+  "words": [
+    "rjsf",
+    "tailwindcss",
+    "Lucide",
+    "zustand",
+    "monaco",
+    "shadcn",
+    "vite",
+    "tsconfig",
+    "tsx",
+    "jsonschema"
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.{ts,tsx}",
+      "language": "en",
+      "dictionaries": ["typescript", "softwareTerms", "node"]
+    },
+    {
+      "filename": "**/*.md",
+      "language": "en",
+      "dictionaries": ["softwareTerms"]
+    },
+    {
+      "filename": ["**/*.json", "**/*.yaml", "**/*.yml"],
+      "language": "en",
+      "dictionaries": ["softwareTerms"]
+    }
+  ]
+}
+
+
