@@ -25,5 +25,8 @@
 		}
 	},
 	"include": ["src"],
+	"exclude": [
+		"src/userWorker.ts"
+	],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

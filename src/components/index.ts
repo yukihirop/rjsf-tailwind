@@ -7,7 +7,7 @@ export * from './rjsf'
 
 // Utility Components
 export * from './icons'
-export * from './json-editor'
+// export * from './json-editor'
 export * from './main-nav'
 export * from './mode-toggle'
 export * from './site-header'
