@@ -30,12 +30,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/yourusername/rjsf-tailwind.git"
+		"url": "https://github.com/yukihirop/rjsf-tailwind.git"
 	},
 	"bugs": {
-		"url": "https://github.com/yourusername/rjsf-tailwind/issues"
+		"url": "https://github.com/yukihirop/rjsf-tailwind/issues"
 	},
-	"homepage": "https://github.com/yourusername/rjsf-tailwind#readme",
+	"homepage": "https://github.com/yukihirop/rjsf-tailwind#readme",
 	"peerDependencies": {
 		"react": ">=18.0.0",
 		"react-dom": ">=18.0.0"
