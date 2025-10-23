@@ -8,9 +8,11 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      include: ["src/components/**/*"],
+      include: ["src/components/index.ts", "src/components/**/*", "src/types/**/*"],
       exclude: ["src/main.tsx", "src/App.tsx", "src/samples/**/*", "src/store.ts", "src/userWorker.ts"],
-      outDir: "dist-lib"
+      outDir: "dist-lib",
+      rollupTypes: true,
+      copyDtsFiles: true
     })
   ],
   optimizeDeps: {
