@@ -13,6 +13,9 @@ export default defineConfig({
       outDir: "dist-lib"
     })
   ],
+  optimizeDeps: {
+    include: []
+  },
   build: {
     lib: {
       entry: resolve(__dirname, "src/components/index.ts"),
@@ -24,8 +27,6 @@ export default defineConfig({
       external: [
         "react",
         "react-dom",
-        "@rjsf/core",
-        "@rjsf/utils",
         "@rjsf/validator-ajv8",
         "@radix-ui/react-dropdown-menu",
         "@radix-ui/react-slot",
@@ -40,8 +41,6 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          "@rjsf/core": "RjsfCore",
-          "@rjsf/utils": "RjsfUtils",
           "@rjsf/validator-ajv8": "RjsfValidatorAjv8",
           "@radix-ui/react-dropdown-menu": "RadixDropdownMenu",
           "@radix-ui/react-slot": "RadixSlot",
@@ -51,7 +50,8 @@ export default defineConfig({
           "tailwindcss-animate": "tailwindcssAnimate",
           "lucide-react": "LucideReact",
           "monaco-editor": "MonacoEditor"
-        }
+        },
+        interop: "auto"
       }
     },
     outDir: "dist-lib",
