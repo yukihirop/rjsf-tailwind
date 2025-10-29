@@ -29,6 +29,7 @@ export default defineConfig({
       external: [
         "react",
         "react-dom",
+        "react/jsx-runtime",
         "@rjsf/validator-ajv8",
         "@radix-ui/react-dropdown-menu",
         "@radix-ui/react-slot",
@@ -43,6 +44,7 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "react/jsx-runtime": "jsxRuntime",
           "@rjsf/validator-ajv8": "RjsfValidatorAjv8",
           "@radix-ui/react-dropdown-menu": "RadixDropdownMenu",
           "@radix-ui/react-slot": "RadixSlot",
